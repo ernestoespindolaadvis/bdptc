@@ -1,0 +1,31 @@
+
+Log - site bdptc
+
+29-06-2010
+
+Cambios editoriales:
+
+- Título sitio web escribir "social" en minúscula *--- OK
+- Al lado del título, además del logo Cepal poner logo GTZ *--- OK
+- Llamar "Acerca de" la página que ahora se llama "contacto" *--- OK
+- En ficha de programas, escribir:
+	"Escala geográfica" (no EscalaGeo), *--- OK
+	"Método focalización" (con f minúscula), *--- OK
+	"Organismo responsable" (no Org. responsable), *--- OK
+	"Organismo ejecutor" (con e minúscula) *--- OK
+
+Sugerencias:
+- En portada escribir breves palabras sobre los contenidos de la base.
+- cifras de los programas, necesita más visibilidad (y hay que decir que está en formato Excel). 
+	De repente lo podemos llamar "Datos del programa en formato Excel" *--- OK
+- Aldo: tenemos que encontrar otro nombre para el campo "límite familia", porque suena un poco críptico.
+-  Tenemos que explicar que el glosario es para los datos estadísticos, o agregar también un glosario para los términos usados en los campos de las fichas de programas.
+
+Preguntas:
+- En página de contacto (o "Acerca de") pusiste mi mail. ?
+	Tenemos alguna dirección de correo institucional? *--- R: NO. Es mejor un email personal. No llegan muchos.
+	No voy a poder dar un seguimiento muy bueno al tema si me empiezan a llegar muchos mails
+- mostrar en portada 10 programas a la vez, en vez de 5? menos clicks. *--- OK
+- El motor de búsqueda dónde busca exactamente? *--- R: En campo 'nombre' del programa
+- Para algunos programas (Jamaica y TyT) tenemo todo el contenido traducido al inglés? Cómo podemos visualizarlo? 
+- Los números en paréntesis al lado de componentes o referencias hay que mostrarlos o podemos suprimirlos?

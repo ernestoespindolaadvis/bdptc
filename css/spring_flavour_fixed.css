@@ -1,0 +1,8 @@
+@import "spring_flavour.css";
+
+#container {
+  background:white url(../images/container_bg.gif) 600px 0px repeat-y;
+}
+#footer {
+  background:white url(../images/footer_bg.gif) 570px 0px no-repeat;
+}
