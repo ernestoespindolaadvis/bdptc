@@ -29,7 +29,7 @@ if (isset($_POST['usr']) && isset($_POST['pass'])) {
 
 	// sanitizamos
 	$qusr=htmlspecialchars($_POST['usr']);
-	$qpas=htmlspecialchars($_POST['usr']);
+	$qpas=htmlspecialchars($_POST['pass']);
 
 	// Conexion base de datos.
 	// si no se puede conectar a la BD salimos del script con error 0 y redireccionamos a la pagina de error.
