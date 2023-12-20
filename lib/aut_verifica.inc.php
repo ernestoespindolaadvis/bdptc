@@ -24,32 +24,35 @@ $redir="/bdptc/admin/acceso.php?src=$pag"; // src publico
 ##}
 
 
-// Chequeamos si se est� autentificandose un usuario por medio del formulario
-
+// Chequeamos si se esta autentificandose un usuario por medio del formulario
 if (isset($_POST['usr']) && isset($_POST['pass'])) {
 
+	// sanitizamos
+	$qusr=htmlspecialchars($_POST['usr']);
+	$qpas=htmlspecialchars($_POST['usr']);
 
-	// Conexi�n base de datos.
-	// si no se puede conectar a la BD salimos del scrip con error 0 y
-	// redireccionamos a la pagina de error.
+	// Conexion base de datos.
+	// si no se puede conectar a la BD salimos del script con error 0 y redireccionamos a la pagina de error.
 	$link = Conectarse("bdptc");
 	
 	// realizamos la consulta a la BD para chequear datos del Usuario.
-	$usuario_consulta = $link->query("SELECT id_usr,nombre_login,pass,nivel_acceso FROM usr WHERE nombre_login='".$_POST['usr']."'") or die(header ("Location:  $redir?&error_login=1"));
+	//$usuario_consulta = $link->query("SELECT id_usr,nombre_login,pass,nivel_acceso FROM usr WHERE nombre_login='".$_POST['usr']."'") or die(header ("Location:  $redir?&error_login=1"));
+	$usuario_consulta = $link->query("SELECT id_usr,nombre_login,pass,nivel_acceso FROM usr WHERE nombre_login='".$qusr."'") or die(header ("Location:  $redir?&error_login=1"));
 	
  	// miramos el total de resultado de la consulta (si es distinto de 0 es que existe el usuario)
 
  	if (mysqli_num_rows($usuario_consulta) != 0) {
 
     		// eliminamos barras invertidas y dobles en sencillas
-
-    		$login = stripslashes($_POST['usr']);
+    		//$login = stripslashes($_POST['usr']);
+ 			$login = stripslashes($qusr);
 
 //print "LOGIN $login<br>";
 
     		// encriptamos el password en formato md5 irreversible.
     		//$password = md5($_POST['pass']);
-    		$password = $_POST['pass'];
+    		//$password = $_POST['pass'];
+    		$password = $qpas;
 
 //print "PASS $password<br>";
 
